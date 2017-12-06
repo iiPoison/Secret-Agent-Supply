@@ -5,21 +5,22 @@ body {
   display: block;
 }
 
-header {
+header { /* part 1 */
   background-color: black;
   display: flex;
-  justify-content: flex-start;
+
 }
 
-.header {
+.header {  /* part 1 */
   width: 960px;
   margin: 0 auto;
   display: flex;
   align-items: center; /* все элементы контейнера выравниваются по центру по оси cross axis */
-  padding: 12px 0 12px 0.5em;
+  justify-content: flex-start;
+  padding: 12px 0 12px 0.5rem;
 }
 
-.header span {
+.header span {  /* part 1 */
   font-size: 1rem;
   font-family: Helvetica;
   font-weight: bold;
@@ -28,7 +29,46 @@ header {
   margin: 0.66rem 0.5rem;
 }
 
-.header img {
-  height: 1.5em;
+.header img {  /* part 1 */
+  height: 1.5rem;
   padding-right: 15px;
+}
+
+.new-arival { /* part 2 основной контейнер с фоном */
+  background-image: url("../images/moto.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 25rem;
+}
+
+.new-arival .sub1 { /* part 2 этоn контейнер задаёт ширину в 960 пикселей*/
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+
+
+}
+
+.new-arival .sub1 .sub2 { /* part 2 в этом контейнере содержится контент*/
+  width: 20rem;
+  display: block;
+  flex-direction: column;
+  background-color: black;
+  position: relative;
+  top: 9rem;
+  padding: 2rem 3rem;
+}
+
+h4 { /* part 2 */
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+}
+
+h1 { /* part 2 */
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin: 0.75rem 0px; /* зименнём 0,25rem, как в тех задании */
 }
