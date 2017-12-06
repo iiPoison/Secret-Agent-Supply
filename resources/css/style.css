@@ -38,7 +38,7 @@ header { /* part 1 */
   background-image: url("../images/moto.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   height: 25rem;
 }
 
