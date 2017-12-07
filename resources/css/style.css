@@ -137,21 +137,39 @@ h1 { /* part 2 */
   padding: 0.5rem;
 }
 
-.content2 {
+.content2 { /* part 4, контент под изображениями location and hours  */
   display: flex;
   justify-content: space-between;
   margin-top: 3rem;
   margin-bottom: 4rem;
 }
 
-.element {
+.element { /* part 4 ширина одного элемента*/
   width: 35%
 }
 
-.title {
+.title { /* part 4, свойства черного заголовка*/
   display: block;
   background-color: black;
   color: white;
   padding: 1rem 2rem;
   margin-bottom: 0.25rem;
+}
+
+footer { /* part 5 footer */
+  background-color: black;
+  height: 10rem; /* в тех задании задан 5rem, но на финальном изображеия явно не 5rem */
+  display: flex;
+  justify-content: center;
+}
+
+.footer-align { /* part 5, создает контейнер и выравнивает текст по двум осям */
+  width: 960px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer-align span { /* part 5 footer, цвет текста*/
+  color: white;
 }
