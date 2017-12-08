@@ -74,7 +74,12 @@ h1 { /* part 2 */
 
 .red-block { /* part 3 */
   background-color: firebrick;
+  display: flex;
   justify-content: center;
+}
+
+.block-menu {
+  width: 960px;
   display: flex;
   flex-direction: column;
 }
@@ -92,7 +97,7 @@ h1 { /* part 2 */
 }
 
 .mob-nav { /* part 3 для планшетной версии*/
-  display: none;
+  display: none; 
   text-align: center;
 
 }
@@ -207,7 +212,7 @@ footer { /* part 5 footer */
   color: white;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) { /* Для планшетов */
   .header span {  /* part 1 */
     font-size: 0.8rem;
     margin: 0.5rem 0.5rem;
@@ -232,9 +237,14 @@ footer { /* part 5 footer */
     display: none;
   }
 
-  
+
   .item {
     width: 47%;
     flex-shrink: 2;
   }
+}
+
+@media only screen and (max-width: 470px) { /* для экранов телефонов */
+
+
 }
