@@ -115,7 +115,7 @@ h1 { /* part 2 */
 }
 
 .content1 { /* part 4 контейнер с изображением и текстом */
-  width: 960px;
+  max-width: 960px;
   display: flex;
   justify-content: space-between;
   margin-top: 3rem;
@@ -232,9 +232,9 @@ footer { /* part 5 footer */
     display: none;
   }
 
+  
   .item {
     width: 47%;
     flex-shrink: 2;
-    min-width: 30%
   }
 }
