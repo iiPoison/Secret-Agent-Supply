@@ -8,7 +8,6 @@ body {
 header { /* part 1 */
   background-color: black;
   display: flex;
-
 }
 
 .header {  /* part 1 */
@@ -45,8 +44,6 @@ header { /* part 1 */
   width: 960px;
   margin: 0 auto;
   display: flex;
-
-
 }
 
 .sub2 { /* part 2 в этом контейнере содержится контент*/
@@ -99,7 +96,6 @@ h1 { /* part 2 */
 .mob-nav { /* part 3 для планшетной версии*/
   display: none;
   text-align: center;
-
 }
 
 .mob-nav span { /* part 3  для планшетной версии*/
@@ -116,7 +112,6 @@ h1 { /* part 2 */
   width: 960px;
   display: flex;
   flex-direction: column;
-
 }
 
 .content1 { /* part 4 контейнер с изображением и текстом */
@@ -124,8 +119,6 @@ h1 { /* part 2 */
   display: flex;
   justify-content: space-between;
   margin-top: 3rem;
-
-
 }
 
 .item { /* part 4, 1 контейнер с изображение и текстом*/
@@ -137,6 +130,12 @@ h1 { /* part 2 */
   border: 4px solid black;
   width: 30%;
 }
+
+.watch { /* part 4, 2 контейнер с изображение и текстом дублируем для .watc*/
+  border: 4px solid black;
+  width: 30%;
+}
+
 
 .prod-img { /*part 4 этот контейнер для выравнивания изобраэения */
   height: 9rem;
@@ -151,6 +150,10 @@ h1 { /* part 2 */
 }
 
 .glasses .prod-img img { /* part 4, свойства изображения дублируем для .glasses */
+  max-width: 8rem;
+}
+
+.watch .prod-img img { /* part 4, свойства изображения дублируем для .watch */
   max-width: 8rem;
 }
 
@@ -170,6 +173,14 @@ h1 { /* part 2 */
   padding: 0.5rem;
 }
 
+.watch span { /* part 4, дублируем для .watch */
+  color: white;
+  background-color: black;
+  display: block;
+  text-align: center;
+  padding: 0.5rem;
+}
+
 .content2 { /* part 4, контент под изображениями location and hours  */
   display: flex;
   justify-content: space-between;
@@ -179,11 +190,6 @@ h1 { /* part 2 */
 
 .element { /* part 4 ширина одного элемента*/
   width: 35%
-}
-
-.glasses { /* part 4 отдельный класс для очков, так как они в моб версии не будут отображаться*/
-  width: 35%
-
 }
 
 .title { /* part 4, свойства черного заголовка*/
@@ -222,29 +228,97 @@ footer { /* part 5 footer */
   .header img {  /* part 1 */
     height: 1.2rem;
     padding-right: 10px;
-    }
+  }
 
-  .red-block .defoult-nav span { /* скрывает основное меню */
+  .red-block .defoult-nav span { /* part 2 скрывает основное меню */
     display: none;
   }
 
-  .red-block .mob-nav /*span*/ { /* показывает заголовок меню */
+  .red-block .mob-nav { /*part 2 показывает заголовок меню */
     display: block;
     padding: 0.75rem 0;
   }
 
-  .glasses {
+  .glasses { /* part 3 скрываем блок с очками, как по Тех заданию */
     display: none;
   }
 
 
-  .item {
+  .item { /* part 3 блок с ручкой в ширину 47% */
+    width: 47%;
+    flex-shrink: 2;
+  }
+
+  .watch { /* part 3 облок с часами в ширину 47% */
     width: 47%;
     flex-shrink: 2;
   }
 }
 
 @media only screen and (max-width: 470px) { /* для экранов телефонов */
+  .header { /* part 1 центрируем лого*/
+    justify-content: center;
+  }
+
+  .header span { /* part 1 скрываем заголовок */
+    display: none;
+  }
+
+  .new-arival {
+    height: 16rem; /* part 3 в тех задании 15rem, но смотриться не очень */
+  }
+
+  .sub1 {  /* part 2 */
+    width: 100%;
+  }
+
+  .sub2 { /* part 2 */
+    width: 100%;
+    position: relative;
+    top: 10rem;
+    padding: 1rem 2rem;
+
+  }
+  h4 { /* part 2 */
+    font-size: 0.77rem;
+  }
+
+  h1 { /* part 2 */
+    font-size: 1rem;
+  }
+
+  .watch { /* part 4 убираем блок с очками */
+    display: none;
+  }
+
+  .item { /* part 4 оставляем с ручкой */
+    width: 90%;
+    margin: 1rem;
+  }
+
+  .content2 { /* part 4 location and hours располагаем в столбик */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .element { /* part 4 ширина в 90% */
+    width: 90%;
+    margin: 0.5rem 1rem;
+  }
 
 
+  .footer-align { /* part 5 центрируем футер */
+    justify-content: center;
+  }
+
+  .footer-align span { /* part 5 делаем шрифт чуть меньше */
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 270px) { /* от себя для 270px, красивей смотриться */
+  h1 {
+    font-size: 0.8rem;
+  }
 }
