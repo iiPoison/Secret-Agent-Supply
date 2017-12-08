@@ -78,7 +78,7 @@ h1 { /* part 2 */
   justify-content: center;
 }
 
-.block-menu {
+.block-menu { /* part 3, для выравнивания основного меню, оборачивает в блок  */
   width: 960px;
   display: flex;
   flex-direction: column;
@@ -97,7 +97,7 @@ h1 { /* part 2 */
 }
 
 .mob-nav { /* part 3 для планшетной версии*/
-  display: none; 
+  display: none;
   text-align: center;
 
 }
